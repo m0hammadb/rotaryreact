@@ -37,7 +37,7 @@ export default function PasswordEnter(props: { onNumberDial?: (num: number) => v
         handleNumReached(clickedNumber);
         return;
       }
-      setRotateAmount((x) => x + 4);
+      setRotateAmount((x) => x + 6);
     }, 30);
 
     timerRef.current = tr;
@@ -51,7 +51,7 @@ export default function PasswordEnter(props: { onNumberDial?: (num: number) => v
         setRotateAmount(0);
         return;
       }
-      setRotateAmount((x) => x - 3);
+      setRotateAmount((x) => x - 5);
     }, 30);
 
     timerRef.current = tr;
@@ -87,8 +87,6 @@ export default function PasswordEnter(props: { onNumberDial?: (num: number) => v
           }}
         />
       </div>
-
-      <span>{rotateAmount}</span>
     </>
   );
 }
